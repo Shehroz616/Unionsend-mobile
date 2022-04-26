@@ -1,0 +1,67 @@
+.center-y{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#welecome-slider{
+    padding: 0px 35px;
+}
+#welecome-slider .carousel-indicators [data-bs-target]{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #cccccc;
+}
+#welecome-slider .carousel-indicators{
+    position: static;
+}
+#welecome-slider .carousel-indicators .active{
+    background-color: #00a859;
+}
+#welecome-slider .carousel-inner{
+    text-align: center;
+}
+#welecome-slider .carousel-inner h4{
+    color: #2f3e39;
+}
+#welecome-slider .carousel-inner p{
+    color: #8e9993;
+}
+.welcome-logo{
+    width: 100%;
+    margin: 40px 0px;
+}
+.login-btns{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.login-btns a{
+    width: 48%;
+    color: #374a44;
+    border-radius: 5px;
+    border: 1px solid #374a44;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px;
+    font-weight: 500;
+}
+.login-btns a:nth-child(2){
+    width: 48%;
+    background-color: #374a44;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #374a44;
+}
+.check-rate-btn{
+    display: block;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    color: #374a44;
+    text-decoration: none;
+    font-weight: 500;
+}
