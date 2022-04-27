@@ -365,9 +365,6 @@ div[role="progressbar"] {
     border: 1px solid #8e9993;
     border-radius: 2px;
 }
-
-
-
 /* When the checkbox is checked, add a blue background */
 .check_container input:checked~.checkmark {
     background-color: #00a859;

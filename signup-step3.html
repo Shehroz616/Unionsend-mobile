@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnionSend</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="min-vh-100 d-flex flex-column">
+        <div class="header">
+            <a href="signup-step2.html" class="back-btn">
+                <i class="bi bi-chevron-left"></i> Back
+            </a>
+            <div class="page-name">SignUp</div>
+        </div>
+        <div class="container wave-bg">
+            <div class=" pb-4 position-relative">
+                <img src="img/logo.png" class="img-fluid logo" alt="">
+                <div class="step-counters">
+                    <div class="step-counter">
+                        <span>2</span>
+                    </div>
+                    <div class="step-counter" role="progressbar" aria-valuenow="65" aria-valuemin="0"
+                        aria-valuemax="100" style="--value:42.6">
+                        <span class="current-step">3</span> <span>/7</span>
+                    </div>
+                    <div class="step-counter">
+                        <span>4</span>
+                    </div>
+                </div>
+                <i class="bi bi-chevron-right counter-right-arrow"></i>
+                <div class="text-center mt-4">
+                    <h5>Verify your phone number</h5>
+                    <p>Please enter the code sent to the number ending in 4225</p>
+                </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1650966956">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="container">
+            <form action="" class="mt-5">
+                <div class="mb-3">
+                    <input type="number" pattern="/d*" placeholder="Enter Code" class="custom-input">
+                </div>
+                
+            </form>
+        </div>
+        
+        <div class="container mt-auto pb-4">
+            <a href="signup-step3.html" class="cont-btn">Continue</a>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        const eyeBtn = document.querySelector(".eye-btn")
+        const pass = document.querySelector("#pass")
+        eyeBtn.addEventListener("click", () => {
+            if (pass.getAttribute("type") == "password") {
+                pass.setAttribute("type", "text")
+            }
+            else {
+                pass.setAttribute("type", "password")
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>
