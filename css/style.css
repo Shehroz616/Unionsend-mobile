@@ -104,7 +104,7 @@ a {
     background-color: #00a859;
     color: white;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px;
 }
 
 .back-btn {
@@ -394,4 +394,71 @@ div[role="progressbar"] {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+.user-profile{
+    display: flex;
+    align-items: center;
+}
+.user-profile img{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.user-profile p{
+    color: white;
+    margin: 0px;
+    padding-left: 10px;
+}
+.bell-icon{
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+.account-card{
+    background: linear-gradient(rgba(0, 168, 90, 0.5) ,rgba(0, 240, 144, 0.5)),  url(../img/card-bg.jpeg) ;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0,  0.2);
+}
+.account-card small, .account-card span{
+    color: white;
+    line-height: 1;
+}
+.amount{
+    display: block;
+    font-weight: 600;
+    font-size: 20px;
+}
+.status{
+    display: block;
+    font-weight: 500;
+}
+.account-number{
+    font-weight: 500;
+    display: block;
+}
+.type{
+    font-weight: 500;
+    display: block;
+}
+.card-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-btns a{
+    width: 48%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    background-color: #00a859;
+    padding: 8px 0px;
+    box-shadow: 1px 1px 4px rgb(0, 0, 0,  0.4);
+    font-weight: 500;
 }
