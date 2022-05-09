@@ -75,7 +75,7 @@
                     </div>
                     <div class="col-9">
                         <h5 class="mb-0">Bank</h5>
-                        <p class="mb-0">deposit</p>
+                        <p class="mb-0">Withdrawal</p>
                     </div>
                 </div>
             </div>
@@ -356,6 +356,9 @@
         nextBtn.addEventListener("click", function () {
             if (document.querySelector(".send-boxes.active h5").innerHTML == "Union Transfer") {
                 window.location.href = "https://alpha.techcon.com.pk/unionsend-mobile/union-transfer.html"
+            }
+            else if (document.querySelector(".send-boxes.active h5").innerHTML == "Pay Bill") {
+                window.location.href = "https://alpha.techcon.com.pk/unionsend-mobile/pay-bill.html"
             }
         })
         

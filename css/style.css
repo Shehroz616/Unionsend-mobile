@@ -658,3 +658,6 @@ div[role="progressbar"] {
 .cont-btn:disabled{
     background-color: #cccccc;
 }
+.scan-icon{
+    font-size: 20px;
+}

@@ -41,17 +41,25 @@
             </div>
         </div>
     </div>
-    <div class="col-md-5 mx-auto pb-5">
-        <div class="agent-box p-4 pb-5">
-            <div class="text-center">
-                <i class="bi bi-check-circle-fill success-icon"></i>
-                <h1 class="theme_color">Success!</h1>
-                <p>Transection Complete</p>
-                <p class=""> You have successfully sent <b>₦995.50</b>. See transaction details under <a href="" class="activity-btn">activity</a> </p>
-                <p class="">Keep calm Money will be available in your account shortly</p>
-                <a href="send-money.html" class="cont-btn mb-3">Send Money</a>
-                <a href="#" class="print-btn"><i class="bi bi-printer"></i> Print</a>
+    <div class="col-md-5 mx-auto mt-4 pb-5">
+        <div class="text-center">
+            <h1>Pay Bill</h1>
+        </div>
+        <div class="agent-box p-4">
+            <span>Amount</span>
+            <div class="input-group mb-4 mt-1">
+                <span class="input-group-text">₦</span>
+                <input type="text" class="form-control">
             </div>
+            <div class="mb-3">
+                <div class="d-flex justify-content-between pe-5">
+                    <label for="transfer" class="form-label">Transfer to</label>
+                    <i class="bi bi-upc-scan scan-icon me-5"></i>
+                </div>
+                <input type="email" class="form-control" id="transfer" placeholder="Email/Username">
+              </div>
+            
+            <a href="success.html" class="cont-btn">Transfer Now</a>
         </div>
     </div>
     <div class="footer-menu ">
@@ -75,6 +83,29 @@
             <i class="bi bi-person-fill"></i> <br>
             Account
         </a>
+    </div>
+
+
+
+    <div class="modal fade" id="add_msg" tabindex="-1" aria-labelledby="add_msgLabel" style="display: none;"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="meassage" class="form-label">Add Meassage</label>
+                        <textarea class="form-control" id="meassage" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer flex-nowrap">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="cont-btn">Add Meassage</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
