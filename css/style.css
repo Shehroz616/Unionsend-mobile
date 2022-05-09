@@ -633,3 +633,7 @@ div[role="progressbar"] {
     color: #00a859;
     padding: 9px;
 }
+.success-icon {
+    font-size: 5rem;
+    color: #0da859;
+}
