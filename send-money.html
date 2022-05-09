@@ -46,7 +46,7 @@
     <div class="container mt-3">
         <h6>How will your receiver get it?</h6>
         <div class="d-flex flex-wrap justify-content-between">
-            <a href="union-transfer.html" class="send-boxes">
+            <div class="send-boxes">
                 <div class="row">
                     <div class="col-3 pe-0 d-flex align-items-center justify-content-center">
                         <img src="img/wallet.png" class="img-fluid" alt="">
@@ -56,7 +56,7 @@
                         <p class="mb-0">Money</p>
                     </div>
                 </div>
-            </a>
+            </div>
             <div class="send-boxes">
                 <div class="row">
                     <div class="col-3 pe-0 d-flex align-items-center justify-content-center">
@@ -90,12 +90,11 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="ms-auto col-5 mt-4">
-            <a href="" class="cont-btn">Next</a>
-        </div> -->
-        
+        <div class="ms-auto col-5 mt-4">
+            <button class="cont-btn" id="next-btn" disabled >Next</button>
+        </div>
     </div>
-    <div class="footer-menu ">
+    <div class="footer-menu">
         <a href="#">
             <i class="bi bi-house-fill"></i> <br>
             Home
@@ -343,6 +342,23 @@
             //callback function: do something with selectedData;
           }
         });
+
+        const sendBoxs = document.querySelectorAll(".send-boxes")
+        const nextBtn = document.querySelector("#next-btn")
+
+        sendBoxs.forEach(sendBox => {
+            sendBox.addEventListener("click",function () {
+                $(".send-boxes").removeClass("active")
+                this.classList.add("active")
+                nextBtn.removeAttribute("disabled")
+            })
+        });
+        nextBtn.addEventListener("click", function () {
+            if (document.querySelector(".send-boxes.active h5").innerHTML == "Union Transfer") {
+                window.location.href = "https://alpha.techcon.com.pk/unionsend-mobile/union-transfer.html"
+            }
+        })
+        
       </script>
 </body>
 </html>

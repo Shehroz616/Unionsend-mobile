@@ -227,6 +227,7 @@ a {
     background-color: #00a859;
     color: white;
     border: none;
+    transition: all .3s;
 }
 
 @keyframes growProgressBar {
@@ -533,6 +534,8 @@ div[role="progressbar"] {
     padding: 15px;
     margin-bottom: 20px;
     width: 48%;
+    transition: all .3s;
+    border: 1px solid #eeeeee;
 }
 .bg-theme{
     background-color: #00a859;
@@ -636,4 +639,11 @@ div[role="progressbar"] {
 .success-icon {
     font-size: 5rem;
     color: #0da859;
+}
+.send-boxes.active{
+    transform: scale(1.1);
+    border: 1px solid #00a859;
+}
+.cont-btn:disabled{
+    background-color: #cccccc;
 }
