@@ -524,3 +524,24 @@ div[role="progressbar"] {
 .banner-area img{
     border-radius: 15px;
 }
+.amount{
+    color: #00a859;
+}
+.send-boxes{
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px #eeeeee;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.bg-theme{
+    background-color: #00a859;
+}
+.send-boxes p{
+    font-size: 12px;
+}
+.send-boxes h5{
+    font-size: 16px;
+}
+.send-boxes .badge{
+    font-size: 10px;
+}
