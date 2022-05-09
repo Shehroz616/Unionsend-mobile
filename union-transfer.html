@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="header">
         <div class="d-flex justify-content-between">
@@ -20,7 +22,7 @@
         </div>
     </div>
     <div class="container wave-bg pt-4">
-    
+
         <div class="user-div ">
             <div class="d-flex">
                 <div class="user-img">
@@ -39,18 +41,18 @@
             </div>
         </div>
     </div>
-    <div class="col-md-5 mx-auto pb-5">
+    <div class="col-md-5 mx-auto pb-5 pt-4">
         <div class="text-center">
             <h1>Send Money</h1>
             <p>Send your money on anytime.</p>
         </div>
-        <div class="agent-box p-4">
+        <div class="agent-box p-4 pb-5">
             <h2>Personal Details</h2>
             <hr>
             <div class="mb-3">
                 <label for="recipient" class="form-label">Recipient</label>
                 <input type="email" class="form-control" id="recipient" placeholder="Email/Username">
-              </div>
+            </div>
             <span>To Amount</span>
             <div class="input-group mb-4 mt-1">
                 <span class="input-group-text">₦</span>
@@ -66,8 +68,8 @@
                 <h5>1.000</h5>
             </div>
             <hr>
-            <span class="add-msg" data-bs-toggle="modal" data-bs-target="#add_msg">Add Meassage</span>
-            <a href="success3.html" class="theme_btn theme_bg py-2 d-block text-center">Pay Now</a>
+            <a class="add-msg" data-bs-toggle="modal" data-bs-target="#add_msg">Add Meassage</a>
+            <a href="success3.html" class="cont-btn mt-3">Pay Now</a>
         </div>
     </div>
     <div class="footer-menu ">
@@ -92,5 +94,32 @@
             Account
         </a>
     </div>
+
+
+
+    <div class="modal fade" id="add_msg" tabindex="-1" aria-labelledby="add_msgLabel" style="display: none;"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="meassage" class="form-label">Add Meassage</label>
+                        <textarea class="form-control" id="meassage" rows="4"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer flex-nowrap">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="cont-btn">Add Meassage</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
