@@ -10,55 +10,315 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container wave-bg">
-        <div class="text-center pt-4">
-            <h3>Balance</h3>
-            <p class="amount mt-3">1,52 ₦</p>
+    <div class="header">
+        <div class="d-flex justify-content-between">
+            <div class="user-profile">
+                <img src="img/logo.png" alt="">
+                <p>Hi, isibor</p>
+            </div>
+            <button class="bell-icon"><i class="bi bi-bell"></i></button>
         </div>
     </div>
+    <div class="container wave-bg pt-4">
+    
+        <div class="user-div ">
+            <div class="d-flex">
+                <div class="user-img">
+                    <img src="img/profile.jpg" alt="">
+                </div>
+                <div>
+                    <span>Isibor</span> <br>
+                    <span>@isibor97</span>
+                </div>
+            </div>
+            <div>
+                <div class="money">
+                    <span>₦ 295</span> <br>
+                </div>
+                <span>🎁 Loyalty Points 3,623</span>
+            </div>
+        </div>
+    </div>
+    <form action="" class="mt-4 container">
+        <h6>Sending to </h6>
+        <div class="state_dropdown"></div>
+    </form>
     <div class="container mt-3">
-        <div class="send-boxes">
-            <div class="row">
-                <div class="col-3 d-flex align-items-center justify-content-center">
-                    <img src="img/wallet.png" class="img-fluid" alt="">
+        <h6>How will your receiver get it?</h6>
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="send-boxes">
+                <div class="row">
+                    <div class="col-3 pe-0 d-flex align-items-center justify-content-center">
+                        <img src="img/wallet.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-9">
+                        <h5 class="mb-0">Union Transfer</h5>
+                        <p class="mb-0">Money</p>
+                    </div>
                 </div>
-                <div class="col-9">
-                    <h5>UnionSend to UnionSend </h5>
-                    <p>Send to  anyone on UnionSend. If they have no UnionsSend account yet, we'll send them a link to register and get the money. </p>
-                    <span class="badge rounded-pill bg-theme">Fee 1,45%</span>
-                    <span class="badge rounded-pill bg-theme">Instant</span> <br>
-                    <span class="badge rounded-pill bg-theme">Worldwide</span>
+            </div>
+            <div class="send-boxes">
+                <div class="row">
+                    <div class="col-3 pe-0 d-flex align-items-center justify-content-center">
+                        <img src="img/personal.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-9">
+                        <h5 class="mb-0">Cash</h5>
+                        <p class="mb-0">Pickup</p>
+                    </div>
+                </div>
+            </div>
+            <div class="send-boxes">
+                <div class="row">
+                    <div class="col-3 pe-0 d-flex align-items-center justify-content-center">
+                        <img src="img/bank.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-9">
+                        <h5 class="mb-0">Bank</h5>
+                        <p class="mb-0">deposit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="send-boxes">
+                <div class="row">
+                    <div class="col-3 pe-0 d-flex align-items-center justify-content-center">
+                        <img src="img/personal.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-9 d-flex align-items-center">
+                        <h5 class="mb-0">Airtime</h5>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="send-boxes">
-            <div class="row">
-                <div class="col-3 d-flex align-items-center justify-content-center">
-                    <img src="img/bank.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-9">
-                    <h5>Send to Bank account </h5>
-                    <p>Send to money from Unionsend account to your bank account. No transfer fee  </p>
-                    <span class="badge rounded-pill bg-theme">Free</span>
-                    <span class="badge rounded-pill bg-theme">Fast</span> <br>
-                    <span class="badge rounded-pill bg-theme">International</span>
-                </div>
-            </div>
+        <div class="ms-auto col-5 mt-4">
+            <a href="" class="cont-btn">Next</a>
         </div>
-        <div class="send-boxes">
-            <div class="row">
-                <div class="col-3 d-flex align-items-center justify-content-center">
-                    <img src="img/personal.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-9">
-                    <h5>Request money</h5>
-                    <p>Request from anyone even if they dont have UnionSend account yet, send them a link to pay.</p>
-                    <span class="badge rounded-pill bg-theme">Free</span>
-                    <span class="badge rounded-pill bg-theme">Instant</span> <br>
-                    <span class="badge rounded-pill bg-theme">Worldwide</span>
-                </div>
-            </div>
-        </div>
+        
     </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/dd-slick.js"></script>
+    <script>
+        let sateData = [
+          {
+            text: "Abia State",
+            value: "Abia State",
+            selected: true,
+            imageSrc: "img/state_images/abia_state.jpeg"
+          },
+          {
+            text: "Adamawa State",
+            value: "Adamawa State",
+            selected: false,
+            imageSrc: "img/state_images/adamawa_state.jpeg"
+          },
+          {
+            text: "Akwa Ibom State",
+            value: "Akwa Ibom State",
+            selected: false,
+            imageSrc: "img/state_images/akawa_state.jpeg"
+          },
+          {
+            text: "Anambra State",
+            value: "Anambra State",
+            selected: false,
+            imageSrc: "img/state_images/anambra_state.jpeg"
+          },
+          {
+            text: "Bauchi State",
+            value: "Bauchi State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Bayelsa State",
+            value: "Bayelsa State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Benue State",
+            value: "Benue State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Borno State",
+            value: "Borno State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Cross River State",
+            value: "Cross River State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Delta State",
+            value: "Delta State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Ebonyi State",
+            value: "Ebonyi State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Edo State",
+            value: "Edo State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Ekiti State",
+            value: "Ekiti State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Enugu State",
+            value: "Enugu State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Gombe State",
+            value: "Gombe State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Imo State",
+            value: "Imo State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Jigawa State",
+            value: "Jigawa State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Kaduna State",
+            value: "Kaduna State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Kano State",
+            value: "Kano State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Katsina State",
+            value: "Katsina State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Kebbi State",
+            value: "Kebbi State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Kogi State",
+            value: "Kogi State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Kwara State",
+            value: "Kwara State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Lagos State",
+            value: "Lagos State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Nasarawa State",
+            value: "Nasarawa State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Niger State",
+            value: "Niger State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Ogun State",
+            value: "Ogun State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Ondo State",
+            value: "Ondo State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Osun State",
+            value: "Osun State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Plateau State",
+            value: "Plateau State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Rivers State",
+            value: "Rivers State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Sokoto State",
+            value: "Sokoto State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Taraba State",
+            value: "Taraba State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Yobe State",
+            value: "Yobe State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+          {
+            text: "Zamfara State",
+            value: "Zamfara State",
+            selected: false,
+            imageSrc: "img/state_images"
+          },
+        ]
+    
+        $('.state_dropdown').ddslick({
+          data: sateData,
+          width: "100%",
+          imagePosition: "right",
+          onSelected: function (selectedData) {
+            //callback function: do something with selectedData;
+          }
+        });
+      </script>
 </body>
 </html>
