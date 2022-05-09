@@ -679,3 +679,7 @@ div[role="progressbar"] {
 .theme_bg {
     background: #0da859;
 }
+.code-digits {
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+}
