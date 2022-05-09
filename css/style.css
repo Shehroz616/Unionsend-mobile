@@ -661,3 +661,17 @@ div[role="progressbar"] {
 .scan-icon{
     font-size: 20px;
 }
+.widthraw-box{
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #eeeeee;
+    padding: 10px;
+    transition: all .3s;
+    border: 1px solid #eeeeee;
+}
+.widthraw-box h6{
+    margin-top: 10px;
+}
+.widthraw-box img{
+    width: 50%;
+}
