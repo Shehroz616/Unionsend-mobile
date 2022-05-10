@@ -703,6 +703,7 @@ div[role="progressbar"] {
     /* visibility: hidden; */
     display: none;
     transition: all .3s;
+    z-index: 5;
 }
 .stars i {
     color: #0da859;
