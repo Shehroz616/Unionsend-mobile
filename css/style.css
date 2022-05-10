@@ -715,3 +715,7 @@ div[role="progressbar"] {
 .rate {
     cursor: pointer;
 }
+.bi-upload{
+    color: #00a859;
+    font-size: 40px;
+}
