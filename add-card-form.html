@@ -41,30 +41,38 @@
             </div>
         </div>
     </div>
-    <div class="col-md-5 mx-auto mt-4 pb-5 px-3">
-        <div class="text-center">
-            <h5>Withdraw</h5>
-            <p>You can withdraw by chosing an option</p>
-        </div>
-        <div class="row">
-            <!-- <div class="col-4">
-                <a href="agent.html" class="widthraw-box">
-                    <img src="img/businessman.png" class="img-fluid" alt="">
-                    <h6>Agent</h6>
-                </a>
-            </div> -->
-            <div class="col-4">
-                <a href="add-bank.html" class="widthraw-box">
-                    <img src="img/bank.png" class="img-fluid" alt="">
-                    <h6>Bank</h6>
-                </a>
-            </div>
-            <div class="col-4">
-                <a href="add-card.html" class="widthraw-box">
-                    <img src="img/credit.png" class="img-fluid" alt="">
-                    <h6>Card</h6>
-                </a>
-            </div>
+    <div class="mt-4 pb-5 px-3">
+        <div class="add-bank text-center p-4 pb-5">
+            <form action="">
+                <h5>Withdraw</h5>
+                <p>Add your Card</p>
+                <div class="mb-4">
+                    <input type="email" class="form-control" id="account-number" placeholder="Card Number">
+                </div>
+                <div class="d-flex">
+                    <div class="mb-4 me-2">
+                        <input type="email" class="form-control" id="account-number" placeholder="Expiry date">
+                    </div>
+                    <div class="mb-4 ms-2">
+                        <input type="email" class="form-control" id="account-name" placeholder="CVV">
+                    </div>
+                </div>
+                <div class="form-check text-start">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        <small>Save card details</small>  <i class="fa-9 fa-regular fa-circle-question" data-bs-toggle="modal" data-bs-target="#question_modal"></i>
+                    </label>
+                </div>
+                <div class="text-center mt-4">
+                    <small>Accepted cards</small>
+                    <div class="text-center pt-3 pb-4">
+                        <img src="img/jcb.png" height="20" alt="">
+                        <img src="img/master.png" height="20" alt="">
+                        <img src="img/visa.jpg" height="20" alt="">
+                    </div>
+                </div>
+                <a href="" class="cont-btn mt-3">Add Card</a>
+            </form>
         </div>
     </div>
     <div class="footer-menu ">
@@ -92,26 +100,6 @@
 
 
 
-    <div class="modal fade" id="add_msg" tabindex="-1" aria-labelledby="add_msgLabel" style="display: none;"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="mb-3">
-                        <label for="meassage" class="form-label">Add Meassage</label>
-                        <textarea class="form-control" id="meassage" rows="4"></textarea>
-                    </div>
-                </div>
-                <div class="modal-footer flex-nowrap">
-                    <button type="button" class="close-btn" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="cont-btn">Add Meassage</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
 
